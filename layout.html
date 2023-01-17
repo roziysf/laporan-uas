@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #5f9ea0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #a0d6b4;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: rgb(149, 187, 245);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* Style the footer */
+footer {
+  background-color: #5f9ea0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Mas Khoirul Rozikin</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button onclick="document.location='home.html'">Home</button></li>
+      <li><button onclick="document.location='index.html'">Profil</button></li>
+      <button onclick="document.location='https://roziysf.wordpress.com/'">mywebsite</button>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Profile</h1>
+    <p>Hallo saya nurul Mas Khoirul Rozikin biasa di panggil dina saya berasal dari Grati pasuruan. sekarang sedang menempuh pendidikan s1 di universitas yudharta pasuruan.</p>
+    <p></p>
+  </article>
+</section>
+
+<footer>
+  <p> ©	copyright Rozikin 2022</p>
+</footer>
+
+</body>
+</html>
